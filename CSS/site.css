@@ -1,0 +1,262 @@
+﻿html, body {
+    height: 100%;
+}
+
+.imgBackground {
+    width: 100%;
+    position: fixed;
+    top: -20vw;
+    left: 0;
+    z-index: -20;
+}
+
+/* nav section*/
+.header {
+    /*background-color:#ECE3E3;*/
+    padding: 1%;
+    background-color: white;
+}
+
+#divLogo {
+    display: inline-block;
+    border-width: 0.1px;
+    margin: 0 auto;
+    float: left;
+}
+
+.logo {
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px;
+    color: black;
+    display: inline-block;
+    font-size: 2vw;
+}
+
+#imgLogo {
+    width: 2vw;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    display: inline-block;
+}
+
+
+.navigation {
+    /*font-family: OpenSans;*/
+    /*padding-left: 25vw;*/
+    font-family: 'BioRhyme', serif;
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 4px #272b37;
+    padding-top: 0.5%;
+}
+
+    .navigation a {
+        text-decoration: none;
+        color: black;
+        padding-left: 1.5vw;
+        word-wrap: normal;
+        display: inline-block;
+    }
+
+        .navigation a:hover {
+            color: #E298BB;
+        }
+
+.active {
+    color: #E298BB !important;
+}
+
+.buttonLogOut {
+    display: inline-block;
+    font-size: 1.3vw;
+}
+
+
+
+/* End nav section*/
+
+/* intro section*/
+
+
+#intro {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Abril Fatface', cursive;
+    line-height: 30vw;
+    color: black;
+    text-align: center;
+    text-shadow: -1px 0 #726d87, 0 1px #726d87, 1px 0 #726d87, 0 -1px #726d87;
+    /*background:rgba(255,255,255, 0.5);*/
+}
+
+    #intro h4 {
+        font-size: 5vw;
+        border-bottom: 5px solid white;
+        display: inline;
+        border-top: 5px solid white;
+        color: white;
+    }
+
+.description h5 {
+    font-size: 2vw;
+    font-family: 'Marck Script', cursive;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.description h6 {
+    font-size: 1.5vw;
+    font-family: 'Marck Script', cursive;
+    color: black;
+    text-align: center;
+}
+
+
+.description {
+    color: #E298BB;
+    background-color: white;
+    padding-top: 2.5vw;
+}
+
+.wraperVideo {
+    background-image: url("../pic/1.jpg");
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#placeholder {
+    line-height: 18vw;
+}
+
+
+.row {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.videoDivStyle {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttonsStyle {
+    outline: black solid 2px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin: 1vw;
+    background: transparent;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.1vw;
+    font-family: 'Timmana', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Courgette', cursive;
+}
+
+    .buttonsStyle:hover {
+        background: rgba(0,0,0,0.4);
+        color: rgba(0,0,0,0.8);
+        font-family: 'Timmana', sans-serif;
+        font-family: 'Cinzel', serif;
+        font-family: 'Courgette', cursive;
+    }
+
+.divAddVideo {
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+table {
+    /* border-collapse: separate; */
+    border-spacing: 0.7vw 1vh;
+    font-family: Arial;
+    line-height: 2vw;
+    font-size: 1vw;
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+
+tr:nth-child(even) {
+    background: #F7F8FC;
+}
+
+tr:nth-child(odd) {
+    background: #D1DBE5;
+}
+
+
+table th {
+    padding: 1%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    /* font-weight: bold; */
+    font-family: 'Marck Script', cursive;
+    width: 10vw;
+    font-size: 1.5vw;
+}
+
+table td {
+    font-size: 1.1vw;
+}
+
+.tdWidth {
+    width: 10vw;
+    text-align: center;
+}
+
+
+.logINImage {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wraperDivForm {
+    background-color: black;
+    padding: 1vw;
+    margin-top: 10vw;
+    line-height: 0.5vw;
+    font-size: 1vw;
+}
+
+.divForm {
+    background-color: white;
+    height: 14vw;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+    .divForm h1 {
+        font-family: 'Courgette', cursive;
+        font-size: 3vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+.divVideo {
+    height: 17vw !important;
+}
+
+input, select {
+    width: 10vw;
+    font-family: 'Vollkorn', serif;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+}
+
+span {
+    font-size: 1.5vw;
+}

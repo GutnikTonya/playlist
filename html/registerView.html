@@ -1,0 +1,94 @@
+﻿<div class="row">
+
+    <div class="col-xs-12 logINImage">
+        <img src="../pic/1.jpg" class="imgBackground" />
+
+
+        <div class="col-xs-5"></div>
+        <div class="col-xs-2 wraperDivForm">
+
+
+            <div class="col-xs-12 divForm">
+
+
+
+                <h1>Register</h1>
+
+
+                <br />
+                <form id="myLogin" name="myForm" ng-submit="registerUser()">
+
+
+
+                    <input type="text" name="usernameReg" id="userNameReg" ng-model="usernameReg" ng-pattern="/^(\w+|\w+@\w+\.\w+)$/" ng-trim="true" placeholder="User Name or Email" required>
+                    <br />
+
+                    <br />
+
+
+
+                    <input type="password" name="passwordReg" id="passwordReg" ng-pattern="/^(?=.*\d)(?=.*[A-Z])[0-9a-zA-Z]{8,}$/" ng-trim="true" ng-model="passwordReg" placeholder="Password" required>
+                    <br />
+                    </br/>
+       
+       <br />
+
+                    <button type="submit" class="buttonsStyle" ng-disabled="myForm.$invalid">Register</button>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-xs-5"></div>
+
+
+
+    </div>
+
+    <div class="col-xs-12 footer">
+        <span ng-show="myForm.usernameReg.$error.pattern && myForm.usernameReg.$dirty">User name: Must start with a letter contain letters and numbers only. Or Your Email.</span>
+        <span ng-show="myForm.passwordReg.$error.pattern && myForm.passwordReg.$dirty">Password should contain at least 8 characters, at least one digit and at least one uppercase characters.</span>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

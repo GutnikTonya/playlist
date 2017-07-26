@@ -1,0 +1,54 @@
+﻿<div class="row">
+
+    <div class="col-xs-12 logINImage">
+                     <img src="../pic/1.jpg" class="imgBackground"/>  
+
+
+        <div class="col-xs-5"></div> 
+        <div class="col-xs-2 wraperDivForm">
+
+
+            <div class="col-xs-12 divForm">
+
+
+             <h1>Login</h1>
+<br />
+
+   <form  ng-submit="login()" id="myLogin">
+
+       <input type="text" id="userName" ng-model="username" placeholder="User Name or Email" />
+       <br />
+              <br />
+
+      <input type="password" id="password" ng-model="password" placeholder="Password"/>
+       <br />
+       <br />
+       
+
+
+       <button  class="buttonsStyle" type="submit">Login</button>
+        
+      </form>
+
+
+
+         </div>
+
+
+
+        </div>
+         
+          <div class="col-xs-5"></div>
+
+
+
+    </div>
+
+    <div class="col-xs-12 footer">
+        <span ng-model="logInError"> {{logInError}}</span>
+    </div>
+
+</div>
+
+
+

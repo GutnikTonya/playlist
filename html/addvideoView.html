@@ -1,0 +1,55 @@
+﻿<div class="row">
+
+    <div class="col-xs-12 logINImage">
+        <img src="../pic/2.jpg" class="imgBackground" />
+
+
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4 wraperDivForm">
+
+
+            <div class="col-xs-12 divForm divVideo">
+
+
+                <h1>Add new video</h1>
+                <br />
+
+                <form ng-submit="addVideo()" name="myForm">
+
+                    <input type="text" name="title" ng-model="title" placeholder="Title" required>
+                    <br />
+
+                    <input type="text" name="link" ng-model="link" placeholder="link" ng-pattern="/^http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?‌​[\w\?‌​=]*)?$/" required>
+
+                    <br />
+
+                    <select data-ng-options="o.name for o in category" data-ng-model="selectedOption"></select>
+                    <br />
+                    <input type="text" ng-model="description" placeholder="description">
+                    <br />
+
+                    <button class="buttonsStyle" type="submit" ng-disabled="myForm.$invalid">Add video</button>
+
+
+
+                </form>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-xs-4"></div>
+        <div class="col-xs-12 footer">
+
+            <span ng-show="myForm.link.$error.pattern && myForm.link.$dirty">Please Enter a valid youtube link!</span>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
